@@ -1,4 +1,4 @@
-FROM golang:latest
+FROM golang:1.15.3
 WORKDIR /go/src/github.com/llegolas/reverse-words/
 COPY main.go .
 RUN go get github.com/gorilla/mux && go get github.com/prometheus/client_golang/prometheus/promhttp
