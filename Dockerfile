@@ -1,5 +1,5 @@
 FROM golang:latest
-WORKDIR /go/src/github.com/mvazquezc/reverse-words/
+WORKDIR /go/src/github.com/llegolas/reverse-words/
 COPY main.go .
 RUN go get github.com/gorilla/mux && go get github.com/prometheus/client_golang/prometheus/promhttp
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main .
